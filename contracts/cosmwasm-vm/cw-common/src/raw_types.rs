@@ -49,3 +49,7 @@ pub use ibc_proto::ibc::core::commitment::v1::MerkleProof as RawMerkleProof;
 pub use ibc_proto::ibc::core::connection::v1::Version as RawVersion;
 pub use ibc_proto::ics23::CommitmentProof as RawCommitmentProof;
 pub use ibc_proto::protobuf::Protobuf;
+
+use ibc_proto::{
+	ibc::lightclients::wasm::v1::MsgPushNewWasmCode as RawMsgPushNewWasmCode,
+};

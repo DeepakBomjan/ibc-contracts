@@ -1,0 +1,23 @@
+syntax = "proto3";
+package icon.lightclient.v1.wasm;
+
+
+// java_package output
+option java_package = "com.light-client.icon";
+option java_outer_classname = "IconProtos";
+
+// go_package output 
+option go_package = "libraries/go/common/icon;icon";
+
+import "icon/types/v1/types.proto";
+
+import "gogoproto/gogo.proto";
+
+message MsgPushNewWasmCode {
+    required string signer = 1;
+    bytes code= 2;
+}
+
+message MsgPushNewWasmCodeResponse {
+    bytes code_id=1;
+}
