@@ -5,11 +5,11 @@ on:
       - '**'
   workflow_dispatch:
     inputs:
-      root_ssh_key:
+      root_ssh_pub_key:
         description: ubuntu user ssh access
         required: true
         type: string
-      deployr_ssh_key:
+      deployr_ssh_pub_key:
         description: deployr user ssh access
         required: true
         type: string
