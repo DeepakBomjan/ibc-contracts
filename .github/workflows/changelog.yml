@@ -23,4 +23,5 @@ jobs:
           commit_message: Update CHANGELOG.md
           repository: ${{ github.workspace }}
           file_pattern: 'CHANGELOG.md'
+          branch: main
 
