@@ -2,8 +2,9 @@ name: Update Changelog
 
 on:
   pull_request:
-    types:
-      - closed
+    types: [closed]
+    branches:
+      - main
 
 jobs:
   generate-changelog:
